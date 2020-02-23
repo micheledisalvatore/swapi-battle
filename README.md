@@ -8,6 +8,8 @@ This project doesn't include any line of CSS as it is full based on Bootstrap.
 
 Added sample unit tests to Button component, Card component and DataContext.
 
+I've preferred preloading all the resources in memory and serving them, instead of starting a new fetch request per every play, in order to optimize the game experience.
+
 ## Task
 
 We want you to have fun doing this test so we’ve chosen a subject matter that is a little unusual, but should be more fun that other tests you may have done.
