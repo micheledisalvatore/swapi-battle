@@ -4,7 +4,9 @@
 
 A running preview of this project is available on [Netlify](https://infallible-kepler-085aec.netlify.com/)
 
-This project doesn't include any line of CSS as it is full based on Bootstrap.
+This project doesn't include any line of CSS as it is full based on Bootstrap, for other projects using CSS please check my other projjects on my github profile.
+
+It is based on React and not on Ember as it was required, as I have more experience with React and not enough on Ember.
 
 Added sample unit tests to Button component, Card component and DataContext.
 
