@@ -1,24 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext } from 'react';
+
+import Card from './components/card'
+import Button from './components/button'
+import Loading from './components/loading'
+import ScoreBoard from './components/score-board'
+import dataContext from './contexts/dataContext'
+
 import './App.css';
+import { ResourceSelector } from './components/resource-selector';
 
 function App() {
+  const { player1, player2, winner, loading } = useContext(dataContext)
+
+  if (loading) {
+    return <Loading />
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container container-fluid">
+      <div className="row">
+        <div className="col-sm-6">
+          <Card player={player1} winner={winner === 1} tie={winner === 0} />
+        </div>
+        <div className="col-sm-6">
+          <Card player={player2} winner={winner === 2} tie={winner === 0} />
+        </div>
+      </div>
+      <div className="row my-5">
+        <div className="col-sm-12">
+          <div className="d-flex justify-content-around">
+            <ScoreBoard />
+          </div>
+        </div>
+      </div>
+      <div className="row my-1">
+        <div className="col-sm-12">
+          <div className="d-flex justify-content-center">
+            <ResourceSelector />
+          </div>
+        </div>
+      </div>
+      <div className="row my-1">
+        <div className="col-sm-12">
+          <div className="d-flex justify-content-center">
+            <Button />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
