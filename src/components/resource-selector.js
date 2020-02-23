@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import dataContext from '../contexts/dataContext';
+import dataContext from '../contexts/data-context';
 
 export const ResourceSelector = () => {
   const { TYPES, type, setType } = useContext(dataContext)
+
   return (
     <div className="btn-group btn-group-toggle" data-toggle="buttons">
       <label className={`btn btn-secondary ${ type === TYPES[0] && 'active'}`} htmlFor={TYPES[0]}>

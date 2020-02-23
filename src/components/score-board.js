@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import dataContext from '../contexts/dataContext';
+import dataContext from '../contexts/data-context';
 
 const ScoreBoard = () => {
   const { scores: { player1, player2 } } = useContext(dataContext)
+
   return (
     <div className="card">
       <h5 className="card-header">Score board</h5>

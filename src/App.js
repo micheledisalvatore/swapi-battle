@@ -4,7 +4,7 @@ import Card from './components/card'
 import Button from './components/button'
 import Loading from './components/loading'
 import ScoreBoard from './components/score-board'
-import dataContext from './contexts/dataContext'
+import dataContext from './contexts/data-context'
 
 import './App.css';
 import { ResourceSelector } from './components/resource-selector';

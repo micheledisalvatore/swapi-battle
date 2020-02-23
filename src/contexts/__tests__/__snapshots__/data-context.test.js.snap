@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component and clicks on it 1`] = `
+<div>
+  <div
+    data-testid="loading"
+  />
+</div>
+`;
+
+exports[`renders the component and clicks on it 2`] = `
+<div>
+  <div
+    data-testid="attribute"
+  />
+  <div
+    data-testid="type"
+  >
+    people
+  </div>
+  <div
+    data-testid="winner"
+  />
+  <div
+    data-testid="player1Score"
+  >
+    0
+  </div>
+  <div
+    data-testid="player1-attribute"
+  />
+  <div
+    data-testid="player1-name"
+  />
+  <div
+    data-testid="player2Score"
+  >
+    0
+  </div>
+  <div
+    data-testid="player2-attribute"
+  />
+  <div
+    data-testid="player2-name"
+  />
+  <button
+    data-testid="set-type-people"
+    type="button"
+  />
+  <button
+    data-testid="set-type-starships"
+    type="button"
+  />
+  <button
+    data-testid="play"
+    type="button"
+  />
+</div>
+`;
+
+exports[`renders the component and clicks on it 3`] = `
+<div>
+  <div
+    data-testid="attribute"
+  >
+    foo
+  </div>
+  <div
+    data-testid="type"
+  >
+    people
+  </div>
+  <div
+    data-testid="winner"
+  >
+    2
+  </div>
+  <div
+    data-testid="player1Score"
+  >
+    0
+  </div>
+  <div
+    data-testid="player1-attribute"
+  >
+    5
+  </div>
+  <div
+    data-testid="player1-name"
+  >
+    Foo person 5
+  </div>
+  <div
+    data-testid="player2Score"
+  >
+    1
+  </div>
+  <div
+    data-testid="player2-attribute"
+  >
+    6
+  </div>
+  <div
+    data-testid="player2-name"
+  >
+    Foo person 6
+  </div>
+  <button
+    data-testid="set-type-people"
+    type="button"
+  />
+  <button
+    data-testid="set-type-starships"
+    type="button"
+  />
+  <button
+    data-testid="play"
+    type="button"
+  />
+</div>
+`;

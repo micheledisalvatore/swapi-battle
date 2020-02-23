@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { DataProvider } from './contexts/dataContext';
+import { DataProvider } from './contexts/data-context';
 
 ReactDOM.render(<DataProvider><App /></DataProvider>, document.getElementById('root'));
 

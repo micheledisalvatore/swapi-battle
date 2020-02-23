@@ -21,10 +21,15 @@ export const DataProvider = ({children}) => {
   const [scores, setScores] = useState({ player1: 0, player2: 0 })
 
   const getData = useCallback(async (endpoint) => {
-    const response = await fetch(endpoint)
-    const data = await response.json()
+    try {
+      const response = await fetch(endpoint)
+      const data = await response.json()
 
-    return data
+      return data
+    } catch (e) {
+      console.error(e)
+      return {}
+    }
   }, [])
 
   const getPeople = useCallback(async () => {

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the winner component 1`] = `
+<div>
+  <div
+    class="card text-white bg-success false"
+  >
+    <h5
+      class="card-header"
+    >
+      bar name
+    </h5>
+    <div
+      class="card-body"
+    >
+      <button
+        class="btn btn-primary"
+        type="button"
+      >
+        foo
+         
+        <span
+          class="badge badge-light"
+        >
+          100
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
