@@ -22,7 +22,7 @@ export const DataProvider = ({children}) => {
 
   const getData = useCallback(async (endpoint) => {
     try {
-      const response = await fetch(endpoint)
+      const response = await fetch(endpoint.replace(/^http:/, ''))
       const data = await response.json()
 
       return data
