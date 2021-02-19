@@ -34,7 +34,7 @@ export const DataProvider = ({children}) => {
 
   const getPeople = useCallback(async () => {
     let data
-    let endpoint = 'https://swapi.co/api/people/?format=json'
+    let endpoint = 'https://swapi.dev/api/people/?format=json'
     do {
       data = await getData(endpoint)
 
