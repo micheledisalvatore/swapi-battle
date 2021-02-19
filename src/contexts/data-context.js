@@ -48,7 +48,7 @@ export const DataProvider = ({children}) => {
 
   const getStarships = useCallback(async () => {
     let data
-    let endpoint = 'https://swapi.co/api/starships/?format=json'
+    let endpoint = 'https://swapi.dev/api/starships/?format=json'
     do {
       data = await getData(endpoint)
 
